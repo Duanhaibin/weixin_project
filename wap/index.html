@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+  	<meta content="no-cache" http-equiv="pragma">
+  	<meta content="0" http-equiv="expires">
+    <title>长白山放心游</title>
+    <script><%= htmlWebpackPlugin.options.data %></script>
+</head>
+<body>
+    <div class="loading-box" id="loading">
+      <div class="loading-content"></div>
+    </div>
+    <div id="app-box"></div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <%=htmlWebpackPlugin.files.webpackManifest%>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- 此处引入头部文件，也可自己写 -->
+<include file="Home@Public/mobile_head"/>
+<!-- 此处引入css,js -->
+</head>
+<body>
+<!-- 此处HTML编码 -->
+    html:hello world
+<!-- 此处引入头部文件，也可自己写 -->
+<include file="Home@Public/mobile_foot"/>
+</body>
+</html>
+
+<!-- jsapi参数javascript获取示例-->
+<script type="text/javascript">
+    //静态变量
+    var SITE_URL = "{:SITE_URL}";
+    var IMG_PATH = "__IMG__";
+    var STATIC_PATH = "__STATIC__";
+    var WX_APPID = "{$jsapiParams.appId}";
+    var	WXJS_TIMESTAMP='{$jsapiParams.timestamp}';
+    var NONCESTR= '{$jsapiParams.nonceStr}';
+    var SIGNATURE= '{$jsapiParams.signature}';
+</script>
+<!-- jsapi参数javascript获取示例-->
+<script type="text/javascript">
+    //静态变量
+    var openid = "{$openid}";
+    var	token='{$token}';
+</script>

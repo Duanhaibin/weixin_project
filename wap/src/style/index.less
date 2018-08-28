@@ -1,0 +1,113 @@
+@charset "utf-8";
+/*!
+ * Copyright © 唱游信息 < support@12301.cn >
+ * Author Toma
+ */
+
+ @import './mixin.less';
+ @import (less) './font/iconfont.css';
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+    color: #333;
+    background: #f3f3f5;
+    font-size: 14px;
+}
+
+input{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-modify: read-write-plaintext-only;
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(255,255,255,0)
+}
+
+.theme {
+    color: @theme;
+}
+.grow {
+    color: #666;
+}
+.red {
+  color: #dc2b2b;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.table-show {
+    display: table;
+    width: 100%;
+    .cell {
+        display: table-cell;
+    }
+}
+
+
+.blk {
+  display: block;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background: #fff;
+}
+
+.weui-toast_cancel {
+  padding: 0 8px;
+}
+.weui-toast__content {
+  font-size: 14px;
+  margin: 5px 0 15px 0 !important;
+}
+
+
+.pull-right {
+  float: right;
+}
+
+
+.loading-box {
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  transition: all .3s ease;
+
+  .loading-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -30px;
+    width: 80px;
+    height: 50px;
+    background-image: url(../assets/loading.gif);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
